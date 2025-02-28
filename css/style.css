@@ -23,6 +23,14 @@ nav {
   height: 6rem;
   z-index: 2;
 }
+nav .material-symbols-outlined {
+  font-size: 6rem;
+}
+@media screen and (min-width: 1024px) {
+  nav .material-symbols-outlined {
+    visibility: hidden;
+  }
+}
 
 .logo {
   flex-basis: 50%;
@@ -38,6 +46,7 @@ nav {
   justify-content: flex-end;
   flex-basis: 50%;
   padding-right: 20px;
+  font-size: 5rem;
 }
 
 header {
