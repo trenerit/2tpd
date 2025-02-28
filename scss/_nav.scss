@@ -1,22 +1,23 @@
 @use 'variables' as *;
 
 nav {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     display: flex;
     align-items: center;
     width: 100%;
     height: 6rem;
-    background-color: $color1;
+    // background-color: $color1;
     z-index: 2;
 }
 
 .logo {    
     flex-basis: 50%;
-    padding-left: 20px;
+    padding-left: 30px;
+    padding-top: 30px;
     img {
-        height: 4rem;
+        height: 7rem;
         // width: 42px;
     }
 }
