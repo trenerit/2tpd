@@ -35,5 +35,29 @@ nav {
     justify-content: flex-end;
     flex-basis: 50%;
     padding-right: 20px;
-    font-size: 5rem;
+    // font-size: 5rem;
+    
+    &-ul {
+        display: none;
+        
+        @media screen and (min-width: 1024px) {
+            display: flex;
+            flex-basis: 70%;
+            list-style: none;
+            font-size: 2rem;
+        }
+
+        li {
+            flex-basis: 25%;
+            // border: 1px solid #fff;
+            text-align: center;
+            transition: transform .5s;
+
+            &:hover {
+                font-weight: bold;
+                transform: translateY(-5px);
+            }
+        }
+    
+    }
 }

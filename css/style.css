@@ -46,7 +46,26 @@ nav .material-symbols-outlined {
   justify-content: flex-end;
   flex-basis: 50%;
   padding-right: 20px;
-  font-size: 5rem;
+}
+.menu-ul {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .menu-ul {
+    display: flex;
+    flex-basis: 70%;
+    list-style: none;
+    font-size: 2rem;
+  }
+}
+.menu-ul li {
+  flex-basis: 25%;
+  text-align: center;
+  transition: transform 0.5s;
+}
+.menu-ul li:hover {
+  font-weight: bold;
+  transform: translateY(-5px);
 }
 
 header {
