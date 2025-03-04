@@ -1,3 +1,8 @@
+@keyframes start-header {
+  100% {
+    opacity: 1;
+  }
+}
 html {
   font-size: 10px;
 }
@@ -14,7 +19,7 @@ a {
 }
 
 nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   display: flex;
@@ -22,6 +27,8 @@ nav {
   width: 100%;
   height: 6rem;
   z-index: 2;
+  transition: 1s;
+  overflow: hidden;
 }
 nav .material-symbols-outlined {
   font-size: 6rem;
@@ -30,6 +37,10 @@ nav .material-symbols-outlined {
   nav .material-symbols-outlined {
     visibility: hidden;
   }
+}
+
+.scroll {
+  background-color: #011C40;
 }
 
 .logo {
@@ -89,7 +100,6 @@ header h1 {
   text-align: center;
   padding: 10px;
   line-height: 50px;
-  z-index: 1;
   font-size: 3rem;
 }
 @media screen and (min-width: 678px) {
@@ -104,8 +114,16 @@ header h1 {
   }
 }
 
-.btn-header {
+.header-text {
   z-index: 1;
+  text-align: center;
+  opacity: 0;
+  animation: 3s start-header both;
+}
+
+.btn-header {
+  display: block;
+  margin: 0 auto;
   padding: 20px;
   background-color: #011C40;
   opacity: 0.65;

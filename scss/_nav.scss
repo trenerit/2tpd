@@ -1,7 +1,7 @@
 @use 'variables' as *;
 
 nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;
@@ -10,7 +10,9 @@ nav {
     height: 6rem;
     // background-color: $color1;
     z-index: 2;
-    
+    transition: 1s;
+    overflow: hidden;
+
     .material-symbols-outlined {
         font-size: 6rem;
         
@@ -18,9 +20,14 @@ nav {
             visibility: hidden;
         }
     }
+
 }
 
-.logo {    
+.scroll {
+    background-color: $color2;
+}
+
+.logo { 
     flex-basis: 50%;
     padding-left: 30px;
     padding-top: 30px;
