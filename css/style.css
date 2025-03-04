@@ -3,6 +3,10 @@
     opacity: 1;
   }
 }
+body, html {
+  scroll-behavior: smooth;
+}
+
 html {
   font-size: 10px;
 }
@@ -149,6 +153,10 @@ header h1 {
 .btn-header:hover {
   opacity: 1;
   transform: translateX(10px);
+}
+
+section {
+  min-height: 100vh;
 }
 
 /*# sourceMappingURL=style.css.map */
