@@ -25,12 +25,23 @@ nav {
 
 .scroll {
     background-color: $color2;
+    height: 4.4rem;
 }
 
 .logo { 
     flex-basis: 50%;
     padding-left: 30px;
-    padding-top: 30px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .6rem;
+
+    @media screen and (min-width: 678px) {
+        font-size: 3rem;
+    }
+    @media screen and (min-width: 1024px) {
+        font-size: 3.5rem;
+    }
+
     img {
         height: 7rem;
         // width: 42px;
