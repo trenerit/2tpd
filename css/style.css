@@ -168,5 +168,11 @@ header h1 {
 section {
   min-height: 100vh;
 }
+section h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: normal;
+  padding-top: 6rem;
+}
 
 /*# sourceMappingURL=style.css.map */
