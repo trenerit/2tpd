@@ -6,12 +6,14 @@ nav {
     left: 0;
     display: flex;
     align-items: center;
-    width: 100%;
-    height: 6rem;
+    width: 96%;
+    margin: 0 2%;
+    height: 8rem;
     // background-color: $color1;
     z-index: 2;
     transition: 1s;
     overflow: hidden;
+    border-bottom: 1px solid whitesmoke;
 
     .material-symbols-outlined {
         font-size: 6rem;
@@ -25,7 +27,9 @@ nav {
 
 .scroll {
     background-color: $color2;
-    height: 4.4rem;
+    height: 5.4rem;
+    width: 100%;
+    margin: 0;
 }
 
 .logo { 
