@@ -1,0 +1,22 @@
+$w-m: 678px;
+$w-l: 1024px;
+$w-xl: 2024px;
+
+
+@mixin media-queries ($w: $w-m) {
+   
+    @if $w == 'l' {
+        $w: $w-l;
+    } @else if $w == 'xl' {
+        $w: $w-xl;
+    } @else {
+        $w: $w;
+    }
+
+    @media screen and (min-width: $w) {
+    
+        @content;
+    
+    }
+
+}

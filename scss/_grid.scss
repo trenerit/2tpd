@@ -1,0 +1,11 @@
+$gutter: 20px;
+
+$width-for-small: 100%;
+$width-for-medium: 650px;
+$width-for-large: 1000px;
+$width-for-xlarge: 1980px;
+
+.container {
+    width: $width-for-small;
+    padding: 0 1.2rem;
+}

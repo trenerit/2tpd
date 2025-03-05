@@ -1,4 +1,5 @@
 @use 'variables' as *;
+@use 'mixins' as *;
 
 header {
     display: flex;
@@ -26,15 +27,16 @@ header {
         line-height: 50px;
         font-size: 3rem;
         font-weight: normal;
-        @media screen and (min-width: 678px) {
+        
+        @include media-queries {
             font-size: 5rem;
             line-height: 8rem;
         }
-        @media screen and (min-width: 1024px) {
+        @include media-queries('l') {
             font-size: 7rem;
         }
         
-        @media screen and (min-width: 2000px) {
+        @include media-queries('xl')  {
             font-size: 9rem;
         }
     }
