@@ -25,6 +25,62 @@ a {
 .container {
   width: 100%;
   padding: 0 1.2rem;
+  margin: 0 auto;
+}
+@media screen and (min-width: 678px) {
+  .container {
+    width: 650px;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 1000px;
+  }
+}
+@media screen and (min-width: 2024px) {
+  .container {
+    width: 1980px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 678px) {
+  .row {
+    flex-direction: row;
+  }
+}
+
+.col {
+  flex-basis: 100%;
+}
+@media screen and (min-width: 678px) {
+  .col-medium-50 {
+    flex: 0 0 50%;
+  }
+  .col-medium-25 {
+    flex: 0 0 25%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .col-large-50 {
+    flex: 0 0 50%;
+  }
+  .col-large-25 {
+    flex: 0 0 25%;
+  }
+}
+@media screen and (min-width: 2024px) {
+  .col-xlarge-50 {
+    flex: 0 0 50%;
+  }
+  .col-xlarge-25 {
+    flex: 0 0 25%;
+  }
 }
 
 nav {
