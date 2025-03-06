@@ -1,6 +1,6 @@
 @use 'mixins' as *;
 
-$gutter: 20px;
+$gutter: 10px;
 
 $width-for-small: 100%;
 $width-for-medium: 650px;
@@ -38,6 +38,7 @@ $width-for-xlarge: 1980px;
 
 .col {
     flex-basis: 100%;
+    padding: $gutter;
 
     @include media-queries {
         &-medium-50 {
