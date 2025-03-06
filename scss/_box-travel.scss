@@ -1,0 +1,44 @@
+@use 'variables' as *;
+
+.box-travel {
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 1rem gray;
+    border-radius: .6rem;
+    transition: .5s;
+    margin: 0 auto;
+
+    &:hover {
+        box-shadow: 0 0 2rem;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 2.4rem;
+        padding-top: 1.5rem;
+    }
+
+    p {
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .price {
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.9rem;
+    }
+}
+
+.picture {
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    text-align: center;
+    img {
+        height: auto;
+        width: 100%;
+    }
+}

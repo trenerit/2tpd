@@ -29,7 +29,7 @@ a {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 .container {
@@ -249,6 +249,45 @@ section h2 {
   font-size: 2.6rem;
   font-weight: normal;
   padding-top: 6rem;
+}
+
+.box-travel {
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 1rem gray;
+  border-radius: 0.6rem;
+  transition: 0.5s;
+  margin: 0 auto;
+}
+.box-travel:hover {
+  box-shadow: 0 0 2rem;
+}
+.box-travel h3 {
+  text-align: center;
+  font-size: 2.4rem;
+  padding-top: 1.5rem;
+}
+.box-travel p {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+.box-travel .price {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.9rem;
+}
+
+.picture {
+  position: relative;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+  text-align: center;
+}
+.picture img {
+  height: auto;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
