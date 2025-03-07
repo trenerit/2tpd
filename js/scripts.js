@@ -12,3 +12,14 @@ const navScroll = () => {
 }
 
 window.addEventListener('scroll', navScroll);
+
+// modal window
+const divModal = document.querySelector('#modal');
+
+const btn1 = document.querySelector('article a');
+
+btn1.addEventListener('click', () => {
+
+    divModal.style.display = 'flex';
+
+});

@@ -94,6 +94,25 @@ p {
   }
 }
 
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.708);
+  z-index: 3;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+#modal .modal-content {
+  background-color: #8FB6D9;
+  height: 50%;
+  width: 50%;
+}
+
 nav {
   position: fixed;
   top: 0;
