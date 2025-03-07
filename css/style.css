@@ -242,7 +242,10 @@ header h1 {
 }
 
 section {
-  min-height: 100vh;
+  min-height: 70vh;
+}
+section:nth-of-type(even) {
+  background-color: rgb(235, 235, 235);
 }
 section h2 {
   text-align: center;
@@ -258,9 +261,7 @@ section h2 {
   border-radius: 0.6rem;
   transition: 0.5s;
   margin: 0 auto;
-}
-.box-travel:hover {
-  box-shadow: 0 0 2rem;
+  border: 1px solid lightgray;
 }
 .box-travel h3 {
   text-align: center;
@@ -277,6 +278,22 @@ section h2 {
   font-weight: bold;
   font-size: 1.9rem;
 }
+.box-travel a {
+  color: whitesmoke;
+  border-radius: 0.6rem;
+  background-color: #023373;
+  margin: 3rem auto;
+  height: 4.6rem;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  transition: 0.5s;
+}
+.box-travel a:hover {
+  box-shadow: 0 0 2rem #023373;
+}
 
 .picture {
   position: relative;
@@ -288,6 +305,8 @@ section h2 {
 .picture img {
   height: auto;
   width: 100%;
+  border-radius: 0.6rem;
+  padding: 0.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,9 @@
 section {
-    min-height: 100vh;
+    min-height: 70vh;
+
+    &:nth-of-type(even) {
+        background-color: rgb(235, 235, 235);
+    }
 
     h2 {
         text-align: center;
