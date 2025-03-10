@@ -11,6 +11,7 @@ body, html {
 *::after,
 *::before {
   box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
 }
 
 html {
@@ -19,7 +20,6 @@ html {
 
 body {
   margin: 0;
-  font-family: "Kanit", sans-serif;
   height: 300vh;
 }
 
@@ -81,6 +81,9 @@ p {
   .col-large-50 {
     flex: 0 0 50%;
   }
+  .col-large-33 {
+    flex: 0 0 33.333333%;
+  }
   .col-large-25 {
     flex: 0 0 25%;
   }
@@ -88,6 +91,9 @@ p {
 @media screen and (min-width: 2024px) {
   .col-xlarge-50 {
     flex: 0 0 50%;
+  }
+  .col-xlarge-33 {
+    flex: 0 0 33.333333%;
   }
   .col-xlarge-25 {
     flex: 0 0 25%;
@@ -353,6 +359,46 @@ section h2 {
   width: 100%;
   border-radius: 0.6rem;
   padding: 0.2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  form {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 2024px) {
+  form {
+    width: 70%;
+  }
+}
+
+textarea {
+  height: 14rem;
+}
+
+input, textarea {
+  display: block;
+  resize: none;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid gray;
+  border-radius: 0.6rem;
+  outline: 0;
+  transition: 0.5s;
+  font-size: 1.6rem;
+}
+input:focus, textarea:focus {
+  background-color: rgb(240, 230, 230);
+}
+
+footer {
+  color: whitesmoke;
+  background-color: #011C40;
+  height: 25vh;
+  display: flex;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

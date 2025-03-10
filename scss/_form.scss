@@ -1,0 +1,34 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+form {
+    @include media-queries('l') {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    @include media-queries('xl') {
+        width: 70%;
+    }
+}
+
+textarea {
+    height: 14rem;
+}
+
+input, textarea {
+    display: block;
+    resize: none;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid gray;
+    border-radius: .6rem;
+    outline: 0;
+    transition: .5s;
+    font-size: 1.6rem;
+
+    &:focus {
+        background-color: rgb(240, 230, 230);
+    }
+}

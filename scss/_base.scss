@@ -12,6 +12,7 @@
 *::after,
 *::before {
     box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
 }
 
 html {
@@ -21,7 +22,6 @@ html {
 
 body {
     margin: 0;
-    font-family: "Kanit", sans-serif;
     height: 300vh;
     @extend %properties-scroll;
 }
