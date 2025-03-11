@@ -48,4 +48,29 @@ modalContent.addEventListener('click', (e) => {
 close.addEventListener('click', (e) => {
     e.preventDefault();
     divModal.style.display = 'none';
-})
+});
+
+// menu hamburger
+const hamburger = document.querySelector('.menu .material-symbols-outlined');
+const divSmallMenu = document.querySelector('#techDiv');
+
+hamburger.addEventListener('click', () => {
+
+    divSmallMenu.classList.remove('small-menu-hide');
+    divSmallMenu.classList.add('small-menu');
+
+});
+
+const closeSmallMenu = document.querySelector('#techDiv span');
+const techDivLinks = document.querySelectorAll('#techDiv a');
+
+const closeSmall = () => {
+    divSmallMenu.classList.add('small-menu-hide');
+    divSmallMenu.classList.remove('small-menu');
+}
+
+techDivLinks.forEach((element) => {
+    element.addEventListener('click', closeSmall);
+});
+
+closeSmallMenu.addEventListener('click', closeSmall);

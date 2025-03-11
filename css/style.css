@@ -197,6 +197,39 @@ nav .material-symbols-outlined {
   height: 7rem;
 }
 
+.small-menu-hide {
+  display: none;
+}
+
+.small-menu {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #011C40;
+  color: whitesmoke;
+}
+.small-menu span {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.small-menu ul {
+  height: 100%;
+  padding: 0;
+  list-style: none;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.small-menu li {
+  flex-basis: 15%;
+}
+
 .menu {
   flex-basis: 50%;
   display: flex;

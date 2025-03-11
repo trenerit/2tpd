@@ -13,7 +13,7 @@ nav {
     z-index: 2;
     transition: 1s;
     overflow: hidden;
-    border-bottom: 1px solid whitesmoke;
+    border-bottom: 1px solid $color-ws;
 
     .material-symbols-outlined {
         font-size: 6rem;
@@ -51,6 +51,42 @@ nav {
     }
 }
 
+.small-menu-hide {
+    display: none;
+}
+
+.small-menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: $color2;
+    color: $color-ws;
+
+    span {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    
+    ul {
+        height: 100%;
+        padding: 0;
+        list-style: none;
+        font-size: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    li {
+        flex-basis: 15%;
+    }
+}
+
 .menu {
     flex-basis: 50%;
     display: flex;
@@ -59,7 +95,7 @@ nav {
     
     &-ul {
         display: none;
-        
+
         @include media-queries('l') {
             display: flex;
             flex-basis: 100%;
