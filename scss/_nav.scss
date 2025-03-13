@@ -17,12 +17,12 @@ nav {
 
     .material-symbols-outlined {
         font-size: 6rem;
+        cursor: pointer;
         
         @include media-queries('l') {
             visibility: hidden;
         }
     }
-
 }
 
 .scroll {
@@ -59,11 +59,16 @@ nav {
     display: block;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     width: 100%;
     height: 100vh;
     background-color: $color2;
     color: $color-ws;
+    animation: menu-show .5s;
+
+    @include media-queries {
+        width: 50%;
+    }
 
     span {
         position: absolute;
